@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#7FCAF1</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorFontMain">#2A2A2A</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorTeamItem">#A6E6D4</color>
+    <color name="colorTeamTaskItem">#FAF2A8</color>
+    <color name="colorTeamGoalItem">#DFEEB6</color>
+    <color name="blackSemiTransparent">#9F000000</color>
+    <color name="colorSelectItem">#8B969696</color>
+    <color name="textInputLayout">#96ffffff</color>
+    <color name="transparent">#43FFFFFF</color>
+
+    <color name="colorBlockOne">#A7F590</color>
+    <color name="colorBlockTwo">#F57171</color>
+    <color name="colorBlockThree">#F7A768</color>
+    <color name="colorBlockFour">#D57FFA</color>
+    <color name="colorBlockFive">#7FCAF1</color>
+    <color name="colorBlockSix">#F3A4EC</color>
+    <color name="colorBlockSeven">#498DC2</color>
+    <color name="colorDarkBlue">#222432</color>
+
+
+
 </resources>

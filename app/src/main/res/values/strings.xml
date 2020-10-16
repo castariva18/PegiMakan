@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">PegiMakan</string>
+    <string name="pegi_makan">Pegi Makan</string>
+    <string name="show_password">Show password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register_here">Register here</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="create_account">Create account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="username">Username</string>
+    <string name="confirmation_password">Confirmation password</string>
 </resources>
