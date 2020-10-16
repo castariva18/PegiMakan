@@ -3,6 +3,16 @@ package com.suncode.pegimakan.model;
 public class User {
     String username, email, password, confirmPassword, noHP, lvl, uId;
 
+    public User(String username, String email, String password, String confirmPassword, String noHP, String lvl, String uId) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.confirmPassword = confirmPassword;
+        this.noHP = noHP;
+        this.lvl = lvl;
+        this.uId = uId;
+    }
+
     public User() {
     }
 

@@ -33,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/et_register_Copassword"
                     android:layout_marginLeft="20dp"
+                    android:onClick="itemClicked"
                     android:layout_marginTop="1dp"
                     android:layout_marginRight="20dp"
                     android:text="@string/show_password"
@@ -42,13 +43,26 @@
                     android:id="@+id/et_register_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/et_register_email"
+                    android:layout_below="@+id/et_register_no_hp"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginRight="20dp"
                     android:hint="@string/password"
                     android:inputType="textPassword"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/et_register_no_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_register_email"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/nomor_telepon"
+                    android:inputType="number"
                     android:padding="8dp" />
 
                 <EditText

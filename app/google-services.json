@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "312369201893",
+    "firebase_url": "https://pegi-makan.firebaseio.com",
+    "project_id": "pegi-makan",
+    "storage_bucket": "pegi-makan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312369201893:android:07f2210080e41881444a0c",
+        "android_client_info": {
+          "package_name": "com.suncode.pegimakan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312369201893-m6nlq7s2s8vkiomd3unoce8tso5rjbj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suncode.pegimakan",
+            "certificate_hash": "581887c72aefdd851a4fed3151af5944109d5f93"
+          }
+        },
+        {
+          "client_id": "312369201893-r5mlliiir74ssnbb0p4daao34ibi6up7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7FZJCug6v5dwFFvDKsXpXzX1pyxckUFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312369201893-r5mlliiir74ssnbb0p4daao34ibi6up7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

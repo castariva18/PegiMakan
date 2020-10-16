@@ -12,4 +12,6 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="username">Username</string>
     <string name="confirmation_password">Confirmation password</string>
+    <string name="nomor_telepon">Phone number</string>
+    <string name="please_check_your_email_and_follow_nthe_instruction_after_you_click_reset_password_button">Please check your email and follow \nthe instruction after you click Reset Password button</string>
 </resources>
