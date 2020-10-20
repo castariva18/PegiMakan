@@ -25,13 +25,23 @@ public class FoodItemRestoAdapter extends RecyclerView.Adapter<FoodItemRestoAdap
     private ArrayList<Makanan> mData;
     private ArrayList<String> mDataId;
     private ArrayList<String> mSelectedId;
+    private View tvEmptyView;
 
-    public FoodItemRestoAdapter(Context context, ArrayList<Makanan> data, ArrayList<String> dataId, ClickHandler handler) {
+    public FoodItemRestoAdapter(Context context, ArrayList<Makanan> data, ArrayList<String> dataId, View tvEmpty,ClickHandler handler) {
         mContext = context;
         mData = data;
         mDataId = dataId;
         mClickHandler = handler;
         mSelectedId = new ArrayList<>();
+        tvEmptyView = tvEmpty;
+    }
+
+    public void updateEmptyView() {
+        if (mData.size() == 0) {
+            tvEmptyView.setVisibility(View.VISIBLE);
+        } else {
+            tvEmptyView.setVisibility(View.GONE);
+        }
     }
 
     @NonNull

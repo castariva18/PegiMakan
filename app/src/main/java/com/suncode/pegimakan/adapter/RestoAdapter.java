@@ -32,6 +32,13 @@ public class RestoAdapter extends RecyclerView.Adapter<RestoAdapter.ViewHolder> 
         mSelectedId = new ArrayList<>();
 
     }
+    public void updateEmptyView() {
+        if (mData.size() == 0) {
+            mEmptyView.setVisibility(View.VISIBLE);
+        } else {
+            mEmptyView.setVisibility(View.GONE);
+        }
+    }
 
     @NonNull
     @Override

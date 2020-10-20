@@ -60,6 +60,7 @@ public class MainActivity extends BaseActivity {
         public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
             mData.add(dataSnapshot.getValue(Restaurant.class));
             mDataId.add(dataSnapshot.getKey());
+            mAdapter.updateEmptyView();
             mAdapter.notifyDataSetChanged();
         }
 
@@ -75,6 +76,7 @@ public class MainActivity extends BaseActivity {
             int pos = mDataId.indexOf(dataSnapshot.getKey());
             mDataId.remove(pos);
             mData.remove(pos);
+            mAdapter.updateEmptyView();
             mAdapter.notifyDataSetChanged();
         }
 
@@ -93,6 +95,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
         mStoreRecycleView = findViewById(R.id.rv_resto);
+        mEmptyView = findViewById(R.id.empty_view);
 
         showCarousel();
         showRestaurant();

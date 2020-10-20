@@ -39,4 +39,8 @@
     <string name="total_nrp_0">Total\nRp. 0</string>
     <string name="total_order">Total \n</string>
     <string name="order_now">Order now</string>
+    <string name="profile">Profile</string>
+    <string name="present_by">Present by</string>
+    <string name="still_no_item_here_nclick_button_for_create_item">Still no item here\nclick button for create item</string>
+    <string name="still_no_item_here">Still no item here</string>
 </resources>

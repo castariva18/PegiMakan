@@ -132,6 +132,19 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:text="@string/still_no_item_here_nclick_button_for_create_item"
+                app:layout_constraintBottom_toBottomOf="@+id/rv_food_resto"
+                app:layout_constraintEnd_toEndOf="@+id/rv_food_resto"
+                app:layout_constraintStart_toStartOf="@+id/rv_food_resto"
+                app:layout_constraintTop_toTopOf="@+id/rv_food_resto" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.Guideline

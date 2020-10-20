@@ -31,12 +31,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:textColor="@color/colorPrimary"
             android:hint="@string/search_food_you_want"
             android:textColorHint="@color/colorPrimary"
             app:drawableStartCompat="@drawable/search_light" />
@@ -93,5 +94,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/still_no_item_here"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_resto"
+        app:layout_constraintEnd_toEndOf="@+id/rv_resto"
+        app:layout_constraintStart_toStartOf="@+id/rv_resto"
+        app:layout_constraintTop_toTopOf="@+id/rv_resto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

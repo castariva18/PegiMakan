@@ -72,7 +72,7 @@ public class MainActivity2 extends BaseActivity {
 
 
     private RecyclerView mStoreItemRecycleView;
-    private View mEmptyView;
+    private TextView mEmptyView;
     private FoodItemRestoAdapter mAdapter;
 
 
@@ -91,7 +91,7 @@ public class MainActivity2 extends BaseActivity {
         public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
             mData.add(dataSnapshot.getValue(Makanan.class));
             mDataId.add(dataSnapshot.getKey());
-            // mAdapter.updateEmptyView();
+             mAdapter.updateEmptyView();
             mAdapter.notifyDataSetChanged();
         }
 
@@ -107,7 +107,7 @@ public class MainActivity2 extends BaseActivity {
             int pos = mDataId.indexOf(dataSnapshot.getKey());
             mDataId.remove(pos);
             mData.remove(pos);
-            // mAdapter.updateEmptyView();
+             mAdapter.updateEmptyView();
             mAdapter.notifyDataSetChanged();
         }
 
@@ -133,6 +133,7 @@ public class MainActivity2 extends BaseActivity {
         currentUserId = mAuth.getCurrentUser().getUid();
         mStoreItemRecycleView = findViewById(R.id.rv_food_resto);
         mAddItemFloatingButton = findViewById(R.id.fab_add_food_resto);
+        mEmptyView = findViewById(R.id.empty_text);
         mButtonClicked();
 
         mShowItem();
@@ -169,7 +170,7 @@ public class MainActivity2 extends BaseActivity {
         DividerItemDecoration divider = new DividerItemDecoration(this, linearLayoutManager.getOrientation());
         mStoreItemRecycleView.addItemDecoration(divider);
 
-        mAdapter = new FoodItemRestoAdapter(this, mData, mDataId, new FoodItemRestoAdapter.ClickHandler() {
+        mAdapter = new FoodItemRestoAdapter(this, mData, mDataId,mEmptyView , new FoodItemRestoAdapter.ClickHandler() {
             @Override
             public void onItemClick(int position) {
                 if (mActionMode != null) {
@@ -240,7 +241,7 @@ public class MainActivity2 extends BaseActivity {
         final View view = layoutInflater.inflate(R.layout.dialog_item_food_resto, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(view);
-        builder.setTitle("Edit Item Toko");
+        builder.setTitle("Edit Item");
 
         final EditText name = (EditText) view.findViewById(R.id.et_name_food_item);
         name.setText(selectedItem.getNamaMakanan());

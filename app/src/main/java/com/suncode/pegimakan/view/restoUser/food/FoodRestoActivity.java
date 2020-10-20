@@ -143,7 +143,7 @@ public class FoodRestoActivity extends BaseActivity {
         DividerItemDecoration divider = new DividerItemDecoration(this, linearLayoutManager.getOrientation());
         mStoreItemRecycleView.addItemDecoration(divider);
 
-        mAdapter = new FoodItemRestoAdapter(this, mData, mDataId, new FoodItemRestoAdapter.ClickHandler() {
+        mAdapter = new FoodItemRestoAdapter(this, mData, mDataId, mEmptyView, new FoodItemRestoAdapter.ClickHandler() {
             @Override
             public void onItemClick(int position) {
                 if (mActionMode != null) {
