@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">PegiMakan</string>
+    <string name="app_name">Pegi Makan</string>
     <string name="pegi_makan">Pegi Makan</string>
     <string name="show_password">Show password</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign in</string>
-    <string name="register_here">Register here</string>
+    <string name="register_here">Register</string>
     <string name="forgot_password">Forgot password</string>
     <string name="create_account">Create account</string>
     <string name="sign_up">Sign up</string>
@@ -14,4 +14,29 @@
     <string name="confirmation_password">Confirmation password</string>
     <string name="nomor_telepon">Phone number</string>
     <string name="please_check_your_email_and_follow_nthe_instruction_after_you_click_reset_password_button">Please check your email and follow \nthe instruction after you click Reset Password button</string>
+    <string name="register_restaurant">Register restaurant</string>
+    <string name="name_your_restaurant">Name restaurant</string>
+    <string name="opening_hours">Opening hours</string>
+    <string name="closing_hours">Closing hours</string>
+    <string name="description_your_restaurant">Description</string>
+    <string name="create_your_restaurant">Create your restaurant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="food">Food</string>
+    <string name="drink">Drink</string>
+    <string name="paket">Package</string>
+    <string name="delete_item">Delete item?</string>
+    <string name="delete_items">Delete selected item?</string>
+    <string name="delete">Delete</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="take_picture">Take picture</string>
+    <string name="save">Save</string>
+    <string name="search_food_you_want">Search restaurant you want</string>
+    <string name="restaurant">List restaurant</string>
+    <string name="total_nrp_0">Total\nRp. 0</string>
+    <string name="total_order">Total \n</string>
+    <string name="order_now">Order now</string>
 </resources>

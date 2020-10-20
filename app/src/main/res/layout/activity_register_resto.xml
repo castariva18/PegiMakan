@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".view.RegisterActivity">
+    tools:context=".view.restoUser.RegisterRestoActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -27,108 +27,68 @@
                 android:layout_centerInParent="true"
                 android:layout_marginBottom="32dp">
 
-                <CheckBox
-                    android:id="@+id/cb_register_show_pw"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/et_register_Copassword"
-                    android:layout_marginLeft="20dp"
-                    android:onClick="itemClicked"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginRight="20dp"
-                    android:text="@string/show_password"
-                    android:textSize="12sp" />
-
                 <EditText
-                    android:id="@+id/et_register_password"
+                    android:id="@+id/et_opening_hours"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/et_register_no_hp"
+                    android:layout_below="@+id/et_desc_restaurant"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/password"
-                    android:inputType="textPassword"
+                    android:hint="@string/opening_hours"
+                    android:inputType="time"
                     android:padding="8dp" />
 
                 <EditText
-                    android:id="@+id/et_register_no_hp"
+                    android:id="@+id/et_closing_hours"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/et_register_email"
+                    android:layout_below="@+id/et_opening_hours"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/nomor_telepon"
-                    android:inputType="number"
+                    android:hint="@string/closing_hours"
+                    android:inputType="time"
                     android:padding="8dp" />
 
                 <EditText
-                    android:id="@+id/et_register_Copassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/et_register_password"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginRight="20dp"
-                    android:hint="@string/confirmation_password"
-                    android:inputType="textPassword"
-                    android:padding="8dp" />
-
-                <EditText
-                    android:id="@+id/et_register_name"
+                    android:id="@+id/et_name_restaurant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/username"
-                    android:inputType="textEmailAddress"
+                    android:hint="@string/name_your_restaurant"
+                    android:inputType="text"
+                    android:maxLength="30"
                     android:padding="8dp" />
 
                 <EditText
-                    android:id="@+id/et_register_email"
+                    android:id="@+id/et_desc_restaurant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/et_register_name"
+                    android:layout_below="@+id/et_name_restaurant"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/email"
-                    android:inputType="textEmailAddress"
+                    android:hint="@string/description_your_restaurant"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
                     android:padding="8dp" />
-
-                <TextView
-                    android:id="@+id/tv_goback"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/constraintLayout_Register"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginBottom="1dp"
-                    android:gravity="end"
-                    android:text="@string/already_have_an_account"
-                    android:textColor="@color/colorBlockSeven"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout_Register"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@+id/cb_register_show_pw"
+                    android:layout_below="@+id/et_closing_hours"
                     android:layout_marginTop="10dp">
 
                     <ImageButton
-                        android:id="@+id/btn_register"
+                        android:id="@+id/btn_register_resto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="24dp"
@@ -167,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/create_account"
+        android:text="@string/register_restaurant"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold"

@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-import com.suncode.pegimakan.LoginActivity;
+import com.suncode.pegimakan.view.LoginActivity;
 import com.suncode.pegimakan.model.Session;
 
 import java.text.SimpleDateFormat;

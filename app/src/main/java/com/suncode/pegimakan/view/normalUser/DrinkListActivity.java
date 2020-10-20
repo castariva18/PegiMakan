@@ -1,14 +1,16 @@
-package com.suncode.pegimakan;
+package com.suncode.pegimakan.view.normalUser;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity2 extends AppCompatActivity {
+import com.suncode.pegimakan.R;
+
+public class DrinkListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_drink_list);
     }
 }

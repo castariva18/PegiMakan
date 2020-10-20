@@ -1,4 +1,4 @@
-package com.suncode.pegimakan;
+package com.suncode.pegimakan.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.SignInMethodQueryResult;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.suncode.pegimakan.R;
 import com.suncode.pegimakan.model.User;
 
 public class RegisterActivity extends AppCompatActivity {

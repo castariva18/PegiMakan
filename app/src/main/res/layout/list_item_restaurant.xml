@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_list_resto"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logooren" />
+
+    <TextView
+        android:id="@+id/tv_name_list_food_resto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="Nama restaurant"
+        android:textSize="24sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_list_resto"
+        app:layout_constraintTop_toTopOf="@+id/img_list_resto" />
+
+    <TextView
+        android:id="@+id/tv_desc_resto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="Deskripsi: "
+        android:textSize="18sp"
+
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name_list_food_resto"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_list_food_resto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_list_food_resto" />
+
+    <TextView
+        android:id="@+id/tv_jam_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="Jam: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_list_resto"
+        app:layout_constraintStart_toStartOf="@+id/tv_desc_resto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_resto" />
+
+    <TextView
+        android:id="@+id/tv_jam_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="Jam: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_jam_open"
+        app:layout_constraintStart_toEndOf="@+id/tv_jam_open"
+        app:layout_constraintTop_toTopOf="@+id/tv_jam_open" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

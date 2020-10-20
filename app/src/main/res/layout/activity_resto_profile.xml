@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.normalUser.RestoProfileActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_market" />
+
+    <TextView
+        android:id="@+id/tv_resto_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_resto_detail_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="@string/description_your_restaurant"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resto_detail_name" />
+
+    <TextView
+        android:id="@+id/tv_resto_detail_open"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="Jam"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resto_detail_desc" />
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/sc_presensi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:paddingTop="@dimen/dimen_16dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:weightSum="3">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/card_food_detail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/button_rounded_one"-->
+<!--                    android:clickable="true"-->
+<!--                    android:elevation="4dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackground"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/dimen_72dp"-->
+<!--                        android:layout_height="@dimen/dimen_72dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:src="@drawable/ic_food" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_test1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@string/food"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="24sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/card_drink_detail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/button_rounded_three"-->
+<!--                    android:clickable="true"-->
+<!--                    android:elevation="4dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackground"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="72dp"-->
+<!--                        android:layout_height="72dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:src="@drawable/ic_drink" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_test2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@string/drink"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="24sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/card_package_detail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/button_rounded_two"-->
+<!--                    android:clickable="true"-->
+<!--                    android:elevation="4dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackground"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/dimen_72dp"-->
+<!--                        android:layout_height="@dimen/dimen_72dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:src="@drawable/ic_packag" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_test3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@string/paket"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="24sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+
+
+<!--        </RelativeLayout>-->
+<!--    </ScrollView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_resto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35841313" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Menu list"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.suncode.pegimakan;
+package com.suncode.pegimakan.view;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -20,6 +20,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.suncode.pegimakan.view.normalUser.MainActivity;
+import com.suncode.pegimakan.view.restoUser.MainActivity2;
+import com.suncode.pegimakan.R;
 import com.suncode.pegimakan.model.User;
 import com.suncode.pegimakan.utils.BaseActivity;
 import com.suncode.pegimakan.utils.LoginViewCallback;

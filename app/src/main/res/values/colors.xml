@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
-    <color name="colorPrimaryDark">#7FCAF1</color>
-    <color name="colorAccent">#F57171</color>
+    <color name="colorPrimaryDark">#F7A538</color>
+    <color name="colorAccent">#F7A538</color>
     <color name="colorFontMain">#2A2A2A</color>
     <color name="colorTransparent">#00FFFFFF</color>
     <color name="colorTeamItem">#A6E6D4</color>
@@ -22,6 +22,8 @@
     <color name="colorBlockSeven">#498DC2</color>
     <color name="colorDarkBlue">#222432</color>
 
-
+    <color name="orange">#D55D01</color>
+    <color name="red">#630118</color>
+    <color name="Accent">#D8211B</color>
 
 </resources>
